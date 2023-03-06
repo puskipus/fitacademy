@@ -32,7 +32,7 @@
                         <h5 class="text-center mt-10 mb-1 text-xl font-semibold text-gray-900 dark:text-white">Perusahaan</h5>
                         <span class="text-center mt-16 px-12 text-sm text-gray-500 dark:text-gray-400">Anda yang menginginkan karyawan perusahaan menjadi semakin terampil dan profesional</span>
                         <div class="flex mt-10 pt-10 space-x-3 md:mt-6">
-                            <a href="#" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Started</a>
+                            <a href="{{ url('/perusahaan') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                         <h5 class="text-center mt-10 mb-1 text-xl font-semibold text-gray-900 dark:text-white">Content <br>Creator</h5>
                         <span class="text-center mt-10 px-12 text-sm text-gray-500 dark:text-gray-400">Siapapun yang ingin menyalurkan ide dengan konten yang kreatif, edukatif, dan interaktif</span>
                         <div class="flex mt-10 pt-10 space-x-3 md:mt-6">
-                            <a href="#" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Started</a>
+                            <a href="{{ url('/contentcreator') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         <h5 class="text-center mt-10 mb-1 text-xl font-semibold text-gray-900 dark:text-white">Netizen</h5>
                         <span class="text-center mt-16 px-12 text-sm text-gray-500 dark:text-gray-400">Orang-orang yang suka dan tertarik untuk  mempelajari berbagai hal baru dengan cara seru</span>
                         <div class="flex mt-10 pt-10 space-x-3 md:mt-6">
-                            <a href="#" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Started</a>
+                            <a href="{{ url('/netizen') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -64,8 +64,12 @@
     <div class="h-72"></div>
 
     <footer class="bg-[#F58726] mt-96 max-h-full text-white">
-        <h2 class="text-5xl leading-normal font-bold tracking-widest text-center pt-28">Get More Information</h2>
-        <h5 class="text-2xl pt-10 text-center">Aenean commodo ligula eget dolor. Aenean massa. <br> Cum sociis natoque penatibus et magnis dis parturient monte</h5>
+        <div class="px-80">
+            <h2 class="text-5xl leading-normal font-bold tracking-widest text-center pt-28">FitAcademy</h2>
+            <h3 class="text-center text-3xl font-bold">Platform pembelajaran berbasis microlearning</h3>
+            <h5 class="text-xl pt-10 text-center font-normal">Ayo bergabung dan menjadi lebih dekat dengan FitAcademy! Kunjungi sosial media kami untuk mendapatkan informasi terbaru</h5>
+        </div>
+
 
         <div class="flex justify-center">
             <div class="mt-24 flex items-center">
@@ -78,51 +82,13 @@
                 <h3 class="ml-8">fitacademy_2022</h3>
             </div>
         </div>
+
+        <div class="mt-24 text-center font-normal text-base px-5">
+            <h6>Jl. Pangeran Wirosobo Gg. Wiropamungkas No.8, Sorosutan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55162</h6>
+        </div>
         <div class="h-10 bg-[#F58726]"></div>
     </footer>
 </body>
 
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-<script>
-// Burger menus
-document.addEventListener('DOMContentLoaded', function() {
-    // open
-    const burger = document.querySelectorAll('.navbar-burger');
-    const menu = document.querySelectorAll('.navbar-menu');
-
-    if (burger.length && menu.length) {
-        for (var i = 0; i < burger.length; i++) {
-            burger[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
-
-    // close
-    const close = document.querySelectorAll('.navbar-close');
-    const backdrop = document.querySelectorAll('.navbar-backdrop');
-
-    if (close.length) {
-        for (var i = 0; i < close.length; i++) {
-            close[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
-
-    if (backdrop.length) {
-        for (var i = 0; i < backdrop.length; i++) {
-            backdrop[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
-});
-</script>
 </html>
