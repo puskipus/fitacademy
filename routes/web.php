@@ -14,20 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// routing home ke halaman landingPage
 Route::get('/', function () {
-    return view('landing_page');
+    return view('landingPage.landingPage');
 });
 
+// routing ke halaman dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+// routing halaman profile
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
+// routing ke halaman landing page perusahaan
+Route::view('/perusahaan', 'landingPage.landingPerusahaan');
+Route::view('/contentcreator', 'landingPage.landingContentCreator');
+Route::view('/netizen', 'landingPage.landingNetizen');
 
 require __DIR__.'/auth.php';
