@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,5 +36,7 @@ Route::middleware('auth')->group(function () {
 Route::view('/perusahaan', 'landingPage.landingPerusahaan');
 Route::view('/contentcreator', 'landingPage.landingContentCreator');
 Route::view('/netizen', 'landingPage.landingNetizen');
+
+Route::post('/perusahaan', [RequestController::class, 'addRequest'])->name('addRequestPerusahaan');
 
 require __DIR__.'/auth.php';
