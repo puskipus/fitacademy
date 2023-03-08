@@ -43,11 +43,11 @@
         <div class="mt-11 w-full lg:max-w-full lg:flex">
             <div class="border border-gray-400 shadow-xl bg-white rounded-3xl p-4 flex flex-col justify-between leading-normal lg:border-gray-400">
                 <div class="lg:px-32">
-                    <h2 class="mt-11 text-center text-gray-900 font-semibold text-xl mb-2 md:px-8 lg:text-3xl lg:mb-10">DAPATKAN E-BOOK LENGKAP INI SECARA GRATIS!</h2>
+                    <h2 class="mt-11 text-center text-gray-900 font-semibold text-xl mb-2 md:px-8 lg:text-3xl lg:mb-10">DAPATKAN E-BOOK LENGKAP INI SECARA GRATIS!  </h2>
                     <form action="{{ route('addRequestPerusahaan') }}" method="POST">
                         @csrf
                         <div class="mt-8 mb-6 mx-4 md:mx-7 flex flex-row">
-                            <input type="email" id="default-input"
+                            <input type="email" id="email" name="email"
                                 placeholder="Masukkan alamat email"
                                 class="placeholder:italic placeholder:text-xs basis-3/4 md:basis-11/12 rounded-full bg-gray-200 border border-gray-500 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <button class="ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">

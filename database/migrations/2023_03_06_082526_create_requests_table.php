@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('requests', function (Blueprint $table) {
             $table->id();
             $table->string("email");
-            $table->string("jenis");
+            $table->string("jenis")->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
