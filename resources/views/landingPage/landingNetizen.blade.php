@@ -42,7 +42,7 @@
         <div class="mt-11 w-full lg:max-w-full lg:flex">
             <div class="border border-gray-400 shadow-xl bg-white rounded-3xl p-4 flex flex-col justify-between leading-normal lg:border-gray-400">
                 <div class="lg:px-32">
-                    <h2 class="mt-11 text-center text-gray-900 font-semibold text-xl mb-2 md:px-8 lg:text-3xl lg:mb-10">Tertarik untuk mendapatkan modul ini secara GRATIS? Klik tombol di bawah sekarang!</h2>
+                    <h2 class="mt-11 text-center text-gray-900 font-semibold text-xl mb-2 md:px-8 lg:text-3xl lg:mb-10">DAPATKAN E-BOOK LENGKAP INI SECARA GRATIS!</h2>
                     <div class="mt-8 mb-6 mx-4 md:mx-7 flex flex-row">
                         <input type="email" id="default-input"
                             placeholder="Masukkan alamat email"
@@ -63,15 +63,19 @@
     <h2 class="text-white text-center font-normal text-base mt-6 px-6 md:text-xl ">Ayo bergabung dan menjadi lebih dekat dengan FitAcademy! Kunjungi sosial media kami untuk mendapatkan informasi terbaru</h2>
 
     <div class="flex flex-col md:flex-row md:justify-center items-center mt-8">
-        <div class="flex items-center">
-            <img class="w-7 md:w-10" src="{{ asset('image/tiktok icon.svg') }}" alt="tiktok icon">
-            <h3 class="ml-8 md:ml-5">fitacademy.id</h3>
-        </div>
+        <a class="group" href="https://www.tiktok.com/@fitacademy.id?_t=8aPRooWJ6eI&_r=1">
+            <div class="flex items-center">
+                <div class="bg-[url('../../public/image/tiktok-icon.svg')] group-hover:bg-[url('../../public/image/tiktok-dark-icon.svg')] w-7 h-7 md:w-10 md:h-10"></div>
+                <h3 class="ml-8 md:ml-5 group-hover:text-[#3f3f3f]">fitacademy.id</h3>
+            </div>
+        </a>
 
-        <div class="ml-8 mt-5 md:mt-0 flex items-center">
-            <img class="w-7 md:w-10" src="{{ asset('image/instagram icon.svg') }}" alt="tiktok icon">
-            <h3 class="ml-8 md:ml-5">fitacademy_2022</h3>
-        </div>
+        <a class="group" href="https://www.instagram.com/fitacademy_id/">
+            <div class="ml-2 mt-5 md:mt-0 flex items-center lg:ml-8">
+                <div class="bg-[url('../../public/image/instagram-icon.svg')] group-hover:bg-[url('../../public/image/instagram-dark-icon.svg')] w-7 h-7 md:w-10 md:h-10"></div>
+                <h3 class="ml-8 group-hover:text-[#3f3f3f] md:ml-5">fitacademy_id</h3>
+            </div>
+        </a>
     </div>
 
     <div class="mt-9 text-center font-normal text-xs lg:text-sm">
