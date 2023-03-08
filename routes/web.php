@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,9 +32,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// routing ke halaman landing page perusahaan
+// routing ke halaman landing page perusahaan, content creator, netizen
 Route::view('/perusahaan', 'landingPage.landingPerusahaan');
 Route::view('/contentcreator', 'landingPage.landingContentCreator');
 Route::view('/netizen', 'landingPage.landingNetizen');
+
+//
+Route::post('/perusahaan', [RequestController::class, 'addRequestPerusahaan'])->name('addRequestPerusahaan');
 
 require __DIR__.'/auth.php';
