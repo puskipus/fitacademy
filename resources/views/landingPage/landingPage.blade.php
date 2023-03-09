@@ -17,7 +17,7 @@
 
         <div class="text-center text-white">
             <div class="mt-10 md:mt-12 lg:mt-16 2xl:mt-20">
-                <h1 class="text-base font-bold leading-normal tracking-widest md:text-xl lg:text-3xl 2xl:text-5xl">Mau Belajar Efektif Tapi tetap Asik? <br> FitAcademy Tempatnya!</h1>
+                <h1 class="text-base font-bold leading-normal tracking-widest md:text-xl lg:text-3xl 2xl:text">Mau Belajar Efektif Tapi tetap Asik? <br> FitAcademy Tempatnya!</h1>
             </div>
             <div class="mt-16 lg:mt-16">
                 <h2 class="text-sm font-normal md:text-lg lg:text-xl 2xl:text-3xl">Pilih Siapa Dirimu? <br>
@@ -92,6 +92,6 @@
     </footer>
 </body>
 
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 
 </html>
