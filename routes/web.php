@@ -37,7 +37,7 @@ Route::view('/perusahaan', 'landingPage.landingPerusahaan');
 Route::view('/contentcreator', 'landingPage.landingContentCreator');
 Route::view('/netizen', 'landingPage.landingNetizen');
 
-//
-// Route::post('/perusahaan', [RequestController::class, 'addRequestPerusahaan'])->name('addRequestPerusahaan');
+// save email to database and send e-book to email
+Route::post('/perusahaan/mail', [RequestController::class, 'addRequestPerusahaan'])->name('addRequestPerusahaan');
 
 require __DIR__.'/auth.php';
