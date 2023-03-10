@@ -38,6 +38,6 @@ Route::view('/contentcreator', 'landingPage.landingContentCreator');
 Route::view('/netizen', 'landingPage.landingNetizen');
 
 //
-Route::post('/perusahaan', [RequestController::class, 'addRequestPerusahaan'])->name('addRequestPerusahaan');
+// Route::post('/perusahaan', [RequestController::class, 'addRequestPerusahaan'])->name('addRequestPerusahaan');
 
 require __DIR__.'/auth.php';

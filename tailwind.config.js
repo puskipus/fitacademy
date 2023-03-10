@@ -14,7 +14,9 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                display: ["Poppins"],
+                nunito: ["Nunito Sans", ...defaultTheme.fontFamily.sans],
+                poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
+                inter: ["Inter", ...defaultTheme.fontFamily.sans],
             },
         },
     },
