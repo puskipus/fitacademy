@@ -28,7 +28,7 @@
                 <div class="mt-14 font-poppins font-semibold text-xl">
                     <h2>DAPATKAN E-BOOK LENGKAP INI SECARA GRATIS!</h2>
                 </div>
-                <form action="{{ route('addRequestPerusahaan') }}" method="POST">
+                <form action="{{ route('email') }}" method="POST">
                     @csrf
                     <div class="flex flex-row mt-4 mb-6">
                         <input type="email" id="email" name="email"
