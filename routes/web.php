@@ -38,6 +38,6 @@ Route::view('/contentcreator', 'landingPage.landingContentCreator');
 Route::view('/netizen', 'landingPage.landingNetizen');
 
 // save email to database and send e-book to email
-Route::post('/perusahaan/mail', [RequestController::class, 'addRequestPerusahaan'])->name('addRequestPerusahaan');
+Route::post('/perusahaan/mail', [RequestController::class, 'addRequestPerusahaan'])->name('email');
 
 require __DIR__.'/auth.php';
