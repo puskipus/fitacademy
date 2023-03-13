@@ -28,12 +28,14 @@
                 <div class="mt-14 font-poppins font-semibold text-xl">
                     <h2>DAPATKAN E-BOOK LENGKAP INI SECARA GRATIS!</h2>
                 </div>
-                <form action="{{ route('email') }}" method="POST">
+                <form action="{{ route('emailPerusahaan') }}" method="POST">
                     @csrf
                     <div class="flex flex-row mt-4 mb-6">
+                        <input type="hidden" name="jenis" id="jenis" value="perusahaan">
                         <input type="email" id="email" name="email"
                             placeholder="masukkan alamat email"
-                            class="placeholder:text-xs placeholder:pl-4 basis-3/4 h-14 rounded-full bg-gray-200 border border-gray-500 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:basis-9/12">
+                            class="placeholder:text-xs placeholder:pl-4 basis-3/4 h-14 rounded-full bg-gray-200 border border-gray-500 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:basis-9/12"
+                            required>
                         <button class="px-4 py-2 w-32 ml-4 font-bold text-white bg-[#F58726] rounded-full hover:bg-[#3F3F3F] transition duration-500 ease-in-out">
                             KIRIM
                         </button>
