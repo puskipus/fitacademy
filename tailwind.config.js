@@ -17,6 +17,7 @@ module.exports = {
                 nunito: ["Nunito Sans", ...defaultTheme.fontFamily.sans],
                 poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
                 inter: ["Inter", ...defaultTheme.fontFamily.sans],
+                publicSans: ["Public Sans", ...defaultTheme.fontFamily.sans],
             },
         },
     },
