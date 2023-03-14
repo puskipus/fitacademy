@@ -1,10 +1,10 @@
 @extends('landingPage.master')
 
 @section('konten')
-<div class="mb-16 h-screen w-full relative font-publicSans">
+<div class="relative w-full h-screen mb-16 font-publicSans">
     <nav class="relative flex justify-between md:py-2 lg:py-3 2xl:py-4">
         <a href="#"><img class="ml-4 h-28 md:h-16 lg:h-24 2xl:h-28" src="{{ asset('image/Fit Academy 2022 Logo PNG.png') }}" alt=""></a>
-        <a href="" class="place-self-center px-10">
+        <a href="" class="px-10 place-self-center">
             <button class="px-4 py-2 w-32 h-16 ml-4 text-xl font-bold text-[#F58726] hover:text-white border-[3px] border-[#F58726] rounded-full hover:bg-[#F58726] transition duration-500 ease-in-out">
                 Blog
             </button>
@@ -23,12 +23,12 @@
     </div>
 
     <div class="flex flex-col items-center mt-8 lg:flex-row lg:justify-evenly lg:mt-24">
-        <div class="max-w-sm maxh rounded-lg shadow">
+        <div class="max-w-sm rounded-lg shadow maxh">
             <a href="#">
                 <img class="rounded-t-lg" src="{{ asset('image/Group 12.png') }}" alt="" />
             </a>
             <div class="flex justify-center space-x-3 md:mt-6">
-                <a href="{{ url('/contentcreator') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-[#F58726]">Pilih</a>
+                <a href="{{ route('perusahaan') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-[#F58726]">Pilih</a>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
                 <h5 class="mt-10 mb-1 text-base font-semibold text-center text-gray-900 md:text-xl">Content <br>Creator</h5>
                 <span class="px-12 mt-10 text-sm text-center text-gray-500">Siapapun yang ingin menyalurkan ide dengan konten yang kreatif, edukatif, dan interaktif</span>
                 <div class="flex pt-10 mt-10 space-x-3 md:mt-6">
-                    <a href="{{ url('/contentcreator') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-[#F58726]">Pilih</a>
+                    <a href="{{ route('content_creator') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-[#F58726]">Pilih</a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                 <h5 class="mt-10 mb-1 text-base font-semibold text-center text-gray-900 md:text-xl">Netizen</h5>
                 <span class="px-12 mt-16 text-sm text-center text-gray-500">Orang-orang yang suka dan tertarik untuk  mempelajari berbagai hal baru dengan cara seru</span>
                 <div class="flex pt-10 mt-10 space-x-3 md:mt-6">
-                    <a href="{{ url('/netizen') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-[#F58726]">Pilih</a>
+                    <a href="{{ route('netizen') }}" class="inline-flex items-center px-10 py-3 text-sm font-medium text-center text-white bg-[#2F97D4] rounded-lg hover:bg-[#F58726]">Pilih</a>
                 </div>
             </div>
         </div>

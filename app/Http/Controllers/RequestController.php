@@ -25,18 +25,21 @@ class RequestController extends Controller
                     public_path('files/Employee 101 - Cara Ampuh dan Efektif Meningkatkan Kinerja Karyawan.pdf'),
                 ];
                 $email["gambar"] = '/image/MOCKUP EBOOK 1.png';
+                $email["judul"] = '';
                 break;
             case "contentCreator":
                 $files = [
                     public_path('files/Content Creator Guide - Asik Mengedukasi dengan Metode Microlearning.pdf'),
                 ];
                 $email["gambar"] = '/image/MOCKUP EBOOK 2.png';
+                $email["judul"] = '';
                 break;
             case "netizen":
                 $files = [
                     public_path('files/Career Path - Sukses Menjadi Seorang Copywriter.pdf'),
                 ];
                 $email["gambar"] = '/image/MOCKUP EBOOK 3.png';
+                $email["judul"] = '';
                 break;
             default:
                 dd("jenis tidak ada");
